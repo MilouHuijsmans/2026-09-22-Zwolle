@@ -203,9 +203,9 @@ address.
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% if page.latitude and page.longitude and online == "false" %}    
                 {{page.address}}.
-                Get directions with
+                Voor navigatie zie
                 <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-                or
+                of
                 <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
                 {% if page.what3words %}
                     What3Words location:
@@ -251,13 +251,12 @@ address.
             {% endcomment %}
             <p id="requirements">
             {% if online == "false" %}
-                Participants must bring a laptop with a
-                Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+                Deelnemers moeten een laptop meenemen met een Mac, Linux, of Windows operating system (geen tablet, Chromebook, etc.) met een Software Center of administratieve rechten.
             {% else %}
                 Participants must have access to a computer with a
                 Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
             {% endif %}
-            They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+            Zorg ervoor dat je vooraf aan de workshop de setup hebt voltooid (zie <a href="#setup">hieronder</a>).
             </p>
         </dd>  
     </div>
@@ -271,30 +270,24 @@ address.
             {% endcomment %}
 
             <p id="accessibility">
-            We are committed to making this workshop accessible to everybody. 
+            Wij zijn toegewijd om deze workshop toegankelijk te maken voor iedereen. 
             {% if online == "false" %}
-                The workshop organizers have checked that:
+                De organisatoren bevestigen dat:
                 <br/>
                 <ul>
-                    <li>The room is wheelchair / scooter accessible.</li>
-                    <li>Accessible restrooms are available.</li>
+                    <li>De ruimte toegankelijk is voor rolstoelen en scootmobielen.</li>
+                    <li>Er toegankelijke toiletten beschikbaar zijn.</li>
                 </ul>
             {% endif %}
             </p>
-            <p>
-            We are dedicated to providing a positive and accessible learning environment for all. 
-            We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-            However, we do want to help create an inclusive, accessible experience for all participants. 
-            We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-            To request accessibility support for this workshop, please fill out the 
-            <a href="https://carpentries.typeform.com/to/B2OSYaD0">accessibility support request form</a>.
-            If you have questions or need assistance with the accessibility support form please <a href="mailto:team@carpentries.org">email us</a>.
-            </p>
-            <p>
-            <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary for computing and data science terms.
-            The glossary helps learners attend workshops and use our lessons to make sense of computational and programming jargon written in English by offering it in their native language.
-            Translating data science terms also provides a teaching tool for Carpentries Instructors to reduce barriers for their learners.
-            </p>
+        </dd>
+    </div>
+    <div class="row">
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Voorwaarden</dt>
+        <dd class="col py-2 px-3 mx-0 mb-0">
+          <p>
+            <a href="https://glosario.carpentries.org/">Glosario</a> is een meertalige glossary voor computationele en data science termen. De glossary helpt met het volgen van workshops en het gebruiken van computationele en data science jargon geschreven in het Engels door deze aan te bieden in andere talen. Het vertalen van data science termen is ook een tool voor Carpentries Instructors om de drempels voor het leren van data science te verlagen.
+          </p>
         </dd>
     </div>
     <div class="row">
@@ -381,10 +374,10 @@ Note we also have a CodiMD (the open-source version of HackMD)
 available at https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
+<h2 id="collaborative_notes">Gedeelde notities</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+We zullen dit <a href="{{ page.collaborative_notes }}">samenwerkingsbestand</a> gebruiken voor het delen van notities, opdrachten, URL's en stukjes code.
 </p>
 {% endif %}
 
@@ -400,7 +393,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">Pre-Workshop Survey</h5>
-                <p class="card-text">Please fill out this survey <strong>before attending</strong> the workshop.</p>
+                <p class="card-text">Vul aub deze vragenlijst in <strong>vooraf</strong> aan de workshop.</p>
                 {% if site.carpentry == "incubator" %}
                 <a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a>
                 {% elsif site.incubator_pre_survey %}
@@ -415,7 +408,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 {% elsif site.carpentry == "hpcc" %}
                 <a href="{{ site.hpcc_pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
                 {% else %}
-                <a href="{{ site.pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
+                <a href="{{ site.pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Vul de Pre-Workshop Survey in</a>
                 {% endif %}
             </div>
         </div>
@@ -424,7 +417,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">Post-Workshop Survey</h5>
-                <p class="card-text">Please fill out this survey <strong>before you leave</strong> the workshop.</p>
+                <p class="card-text">Vul aub deze vragenlijst in <strong>voor het einde</strong> van de workshop.</p>
                 {% if site.carpentry == "incubator" %}
                 <a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a>
                 {% elsif site.incubator_post_survey %}
@@ -439,7 +432,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 {% elsif site.carpentry == "hpcc" %}
                 <a href="{{ site.hpcc_post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
                 {% else %}
-                <a href="{{ site.post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Post-Workshop Survey</a>
+                <a href="{{ site.post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Vul de Post-Workshop Survey in</a>
                 {% endif %}
             </div>
         </div>
@@ -511,7 +504,7 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
+  Om deel te nemen aan een
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -522,13 +515,11 @@ please preview your site before committing, and make sure to run
   High Performance Computing Carpentry
   {% endif %}
   workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  heb je toegang nodig tot de onderstaande software. Daarnaast heb je een up-to-date internet browser nodig.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  We onderhouden een lijst van veel voorkomende problemen tijdens installatie op de
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki pagina</a>.
 </p>
 
 {% comment %}
