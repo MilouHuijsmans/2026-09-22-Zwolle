@@ -522,6 +522,10 @@ please preview your site before committing, and make sure to run
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki pagina</a>.
 </p>
 
+<p>
+  <em>Lukt het niet om de installatie te voltooien vooraf aan de workshop? Maak dan in de internet browser gebruik van <a href="https://jupyter.org/try-jupyter/lab/index.html">Jupyter Lite</a></em>
+</p>
+
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
