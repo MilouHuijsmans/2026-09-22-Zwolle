@@ -38,26 +38,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 
 {% comment %}
 8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
 
-
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-set the `pilot` field to `true` in `_config.yml`.
-For workshops teaching a lesson in The Carpentries Incubator,
-remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
-fields in `_config.yml`
-</div>
-
-{% comment %}
 8< ============================= until here ==================
 {% endcomment %}
 
@@ -123,14 +104,13 @@ the pitch.
         <h5 class="card-header">The Carpentries</h5>
         <div class="card-body">
             <p>
-            <strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the
+            <strong><a href="https://carpentries.org">The Carpentries</a></strong> is een project dat bestaat uit de
             <a href="{{site.dc_site}}">Data Carpentry</a>,
             <a href="{{site.hpcc_site}}">High Performance Computing Carpentry</a>,  
             <a href="{{site.lc_site}}">Library Carpentry</a>, and
             <a href="{{site.swc_site}}">Software Carpentry</a>
-             communities of Instructors, Trainers, Maintainers,
-            helpers, and supporters who share a mission to teach foundational computational and data science
-            skills to researchers.
+             communities van Instructors, Trainers, Maintainers,
+            helpers, en supporters die een missie delen om fundamentele computationele en data science vaardigheden te onderwijzen aan onderzoekers. 
             </p>
             {% assign intro_file = site.carpentry | append: '/intro.html' %}
             {% if isOfficial %}
@@ -146,14 +126,14 @@ the pitch.
         <h5 class="card-header">Carpentries Clippings</h5>
         <div class="card-body">
         <p class="text-center">
-        <strong>Want to learn more and stay engaged with The Carpentries?</strong>
+        <strong>Wil je meer leren en betrokken blijven bij The Carpentries?</strong>
         </p>
         <p class="text-center">
-        Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
+        Carpentries Clippings is de tweewekelijkse nieuwsbrief van The Carpentries, waarin we nieuws, vacatures en meer delen uit de community.
         </p>
         <p class="text-center">
             <a href="https://carpentries.org/newsletter/">
-                <button type="button" class="btn btn-success">Sign up to our newsletter</button>
+                <button type="button" class="btn btn-success">Aanmelden voor de nieuwsbrief</button>
             </a>
         </p>
       </div>
@@ -165,12 +145,12 @@ the pitch.
         CODE OF CONDUCT
         {% endcomment %}
         <p class="text-center">
-        Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/policies/coc/">Code of Conduct</a>, which also outlines how to report an incident if needed.
+        Iedereen die deelneemt aan een Carpentries activiteit is verplicht om zich te houden aan de <a href="https://docs.carpentries.org/policies/coc/">Code of Conduct</a>, welke ook aangeeft hoe een incident gerapporteerd kan worden als nodig. 
         </p>
 
         <p class="text-center">
         <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-            <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+            <button type="button" class="btn btn-info">Rapporteer een Code of Conduct incident</button>
         </a>
         </p>
       </div>
@@ -200,11 +180,11 @@ address.
 {% endif %}
 
 <div class="card mb-2">
-  <h5 class="card-header">Workshop Logistics</h5>
+  <h5 class="card-header">Praktische informatie</h5>
   <div class="card-body">
     <dl class="mb-0">
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Who</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Wie</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             AUDIENCE
@@ -219,7 +199,7 @@ address.
         </dd>
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Where</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Waar</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% if page.latitude and page.longitude and online == "false" %}    
                 {{page.address}}.
@@ -246,7 +226,7 @@ address.
         </dd>
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">When</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Wanneer</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             DATE
@@ -262,7 +242,7 @@ address.
         </dd>
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Requirements</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Voorwaarden</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             SPECIAL REQUIREMENTS
@@ -282,7 +262,7 @@ address.
         </dd>  
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Accessibility</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Toegankelijkheid</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             ACCESSIBILITY
@@ -318,21 +298,6 @@ address.
         </dd>
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Workshop Recordings</dt>
-        <dd class="col py-2 px-3 mx-0 mb-0">
-            {% comment %}
-            WORKSHOP RECORDINGS
-
-            Modify or remove the block below if you plan to record the workshop.
-            {% endcomment %}
-            <p id="recordings">
-            Carpentries workshops are designed to be interactive rather than lecture-based, with lessons that build upon one another.
-            To foster a positive online learning environment, we strongly recommend that participants join in real time.
-            As a result, workshop recordings are not recommended and may not be available to learners.
-            </p>
-        </dd>
-    </div>
-    <div class="row">
         <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Contact</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
@@ -341,7 +306,7 @@ address.
             Display the contact email address set in the configuration file.
             {% endcomment %}
             <p id="contact">
-            Please email
+            Stuur een e-mail naar
             {% if page.email %}
             {% for email in page.email %}
             {% if forloop.last and page.email.size > 1 %}
@@ -356,7 +321,7 @@ address.
             {% else %}
             to-be-announced
             {% endif %}
-            for more information.
+            voor vragen of meer informatie.
             </p>
         </dd>
     </div>
@@ -365,14 +330,13 @@ address.
         <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Workshop FAQ</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             <p id="workshops-faq">
-            For answers to frequently asked questions about workshops,
-            refer to <a href="[https://carpentries.org/workshops/workshops-faq/](https://carpentries.org/workshops/workshops-faq/)">the Carpentries Workshop FAQ</a>.
+            Voor antwoorden op veelgestelde vragen over de workshop, ga naar <a href="[https://carpentries.org/workshops/workshops-faq/](https://carpentries.org/workshops/workshops-faq/)">the Carpentries Workshop FAQ</a>.
             </p>    
         </dd>
     </div>
 
     <!-- <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Accessibility</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Toegankelijkheid</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
         
         </dd>
